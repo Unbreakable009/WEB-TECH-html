@@ -1,140 +1,150 @@
-
-
-
+<!DOCTYPE html>
 <html>
-        
-        
+<body>
 
-            <h1><b>Registration</b></h1>
-            <br><br>
-
-            <fieldset>
-
-    <legend><b>General Information</b></legend>
-
-
+    <h1><b>Registration</b></h1>
 
     <table cellpadding="6" cellspacing="3">
-           <tbody><tr>
-            <td><b>First <br> Name :</b>
-            </td><td><input type="text" id="First" value=""></td>
-            <td rowspan="1" align="center" valign="left">
-                
+        <tr>
+            <td valign="top">
+
+                <b>General Information:</b><br><br>
+
+                <table cellpadding="4" cellspacing="2">
+                    <tr>
+                        <td><b>First <br>Name :</b></td>
+                        <td><input type="text" id="firstName"></td>
+                    </tr>
+                    <tr>
+                        <td><b>Last <br>Name :</b></td>
+                        <td><input type="text" id="lastName"></td>
+                    </tr>
+                    <tr>
+                        <td><b>Gender :</b></td>
+                        <td>
+                            <input type="radio" name="gender" value="male"> Male
+                            <input type="radio" name="gender" value="female"> Female
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Father's <br>Name :</b></td>
+                        <td>
+                            <input type="text" id="fatherName">
+                            <input type="file" name="file">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Mother's <br>Name :</b></td>
+                        <td><input type="text" id="motherName"></td>
+                    </tr>
+                    <tr>
+                        <td><b>Blood <br>Group :</b></td>
+                        <td>
+                            <select id="bloodGroup">
+                                <option>A+</option>
+                                <option>B+</option>
+                                <option>O+</option>
+                                <option>AB+</option>
+                                <option>A-</option>
+                                <option>B-</option>
+                                <option>O-</option>
+                                <option>AB-</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Religion :</b></td>
+                        <td>
+                            <select id="religion">
+                                <option>Islam</option>
+                                <option>Hindu</option>
+                                <option>Christian</option>
+                                <option>Buddhist</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+
             </td>
-            
-           </tr>
 
-           <tr>
-            <td><b>Last <br>Name :</b></td>
-            <td><input type="text" id="Name" value=""></td>
-           </tr>
+            <td valign="top" width="40">&nbsp;</td>
 
-           <tr>
-            <td><b>Gender :</b></td>
-            <td><input type="text" id="Gender" value=""></td>
-           </tr>
+            <td valign="top">
 
-           <tr>
-            <td><b>Father's <br>Name :</b></td>
-            <td><input type="text" id="Father&#39;s Name" value=""></td>
-            <td><input type="file" name="file"> </td>
-            
-           </tr>
+                <b>Contact Information:</b><br><br>
 
-           <tr>
-            <td><b>Mother's<br> Name :</b></td>
-            <td><input type="text" id="Mother&#39;s Name" value=""></td>
-           </tr>
+                <table cellpadding="4" cellspacing="2">
+                    <tr>
+                        <td><b>Email :</b></td>
+                        <td><input type="email" id="email"></td>
+                    </tr>
+                    <tr>
+                        <td><b>Phone/Mobile :</b></td>
+                        <td><input type="number" id="phone"></td>
+                    </tr>
+                    <tr>
+                        <td><b>Website :</b></td>
+                        <td><input type="text" id="website"></td>
+                    </tr>
+                    <tr>
+                        <td valign="top"><b>Present Address</b></td>
+                        <td>
+                            <select id="country">
+                                <option>Bangladesh</option>
+                                <option>Japan</option>
+                                <option>Morocco</option>
+                                <option>Palestine</option>
+                                <option>Iran</option>
+                            </select>
+                            <select id="division">
+                                <option>Dhaka</option>
+                                <option>Barishal</option>
+                                <option>Khulna</option>
+                                <option>Rajshahi</option>
+                                <option>Jamalpur</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Address :</b></td>
+                        <td><textarea id="address" rows="3" cols="20" placeholder="Road/Street/City"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="text" id="postCode" placeholder="Post Code"></td>
+                    </tr>
+                </table>
 
-           <tr>
-            <td><b>Blood<br>Group :</b></td>
-            <td> <select>
-                <option>A+</option>
-                <option>B+</option>
-                <option>O+</option>
-                <option>A-</option>
-                <option>B-</option>
-                <option>O-</option>
-            </select>    </td>
-           </tr>
+            </td>
 
-           <tr>
-            <td><b>Religion :</b></td>
-            <td><select>
-                <option>Islam</option>
-                <option>Hindu</option>
-                <option>Cristan</option>
-                <option>Boddu</option>
-               
-            </select></td>
-           </tr>
+            <td valign="top" width="40">&nbsp;</td>
 
+            <td valign="top">
 
-    </tbody></table>
+                <b>Account Information:</b><br><br>
 
-    </fieldset>
+                <table cellpadding="4" cellspacing="2">
+                    <tr>
+                        <td><b>Username :</b></td>
+                        <td><input type="text" id="username"></td>
+                    </tr>
+                    <tr>
+                        <td><b>Password :</b></td>
+                        <td><input type="password" id="password"></td>
+                    </tr>
+                    <tr>
+                        <td><b>Confirm <br>Password :</b></td>
+                        <td><input type="password" id="confirmPassword"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="Register"></td>
+                    </tr>
+                </table>
 
-     <fieldset>
+            </td>
+        </tr>
+    </table>
 
-    <legend><b>Contact Information</b></legend>
-
-
-
-    <table cellpadding="6" cellspacing="3">
-           <tbody><tr>
-            <td><b>Email :</b></td>
-            <td><input type="email" id="email" value=""></td>
-            
-           </tr>
-
-           <tr>
-            <td><b>Last <br>Name :</b></td>
-            <td><input type="text" id="Name" value=""></td>
-           </tr>
-
-           <tr>
-            <td><b>Gender :</b></td>
-            <td><input type="text" id="Gender" value=""></td>
-           </tr>
-
-           <tr>
-            <td><b>Father's <br>Name :</b></td>
-            <td><input type="text" id="Father&#39;s Name" value=""></td>
-            <td><input type="file" name="file"> </td>
-            
-           </tr>
-
-           <tr>
-            <td><b>Mother's<br> Name :</b></td>
-            <td><input type="text" id="Mother&#39;s Name" value=""></td>
-           </tr>
-
-           <tr>
-            <td><b>Blood<br>Group :</b></td>
-            <td> <select>
-                <option>A+</option>
-                <option>B+</option>
-                <option>O+</option>
-                <option>A-</option>
-                <option>B-</option>
-                <option>O-</option>
-            </select>    </td>
-           </tr>
-
-           <tr>
-            <td><b>Religion :</b></td>
-            <td><select>
-                <option>Islam</option>
-                <option>Hindu</option>
-                <option>Cristan</option>
-                <option>Boddu</option>
-               
-            </select></td>
-           </tr>
-
-
-    </tbody></table>
-
-        
-    
-</fieldset></doctype></body></html>
+</body>
+</html>
